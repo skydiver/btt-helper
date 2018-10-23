@@ -1,0 +1,32 @@
+{
+  "name": "btt-helper",
+  "version": "1.0.0",
+  "description": "Helpers to improve your BetterTouchTool presets",
+  "bin": {
+    "your_command": "./bin/btt-helper.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "nyc mocha --recursive"
+  },
+  "author": "Martín M.",
+  "license": "MIT",
+  "homepage": "https://github.com/skydiver/",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "chalk": "^2.2.0",
+    "cli-table": "^0.3.1",
+    "commander": "^2.17.1",
+    "configstore": "^4.0.0",
+    "figlet": "^1.2.0",
+    "inquirer": "^6.2.0",
+    "node-cmd": "^3.0.0",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "update-notifier": "^2.5.0"
+  }
+}
