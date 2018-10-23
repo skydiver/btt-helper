@@ -10,4 +10,5 @@ program
   .version(pkg.version)
   .command('battery', 'Get battery levels')
   .command('volume', 'Get volune level')
+  .command('process', 'Check if process is running')
   .parse(process.argv);

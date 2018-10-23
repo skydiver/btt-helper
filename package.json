@@ -23,6 +23,7 @@
     "commander": "^2.17.1",
     "configstore": "^4.0.0",
     "figlet": "^1.2.0",
+    "find-process": "^1.1.4",
     "inquirer": "^6.2.0",
     "node-cmd": "^3.0.0",
     "request": "^2.83.0",
