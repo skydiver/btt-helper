@@ -10,7 +10,7 @@ program
   .command('level')
   .description('Get current volume level')
   .action(() => volume
-    .volume(helpers.extractName(pkg.name))
+    .volume()
     .catch(helpers.handleError));
 
 program

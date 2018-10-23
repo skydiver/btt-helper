@@ -10,7 +10,7 @@ program
   .command('search')
   .description('Search if process is running')
   .action(() => proc
-    .search(helpers.extractName(pkg.name))
+    .search()
     .catch(helpers.handleError));
 
 program

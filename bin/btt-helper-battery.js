@@ -10,14 +10,14 @@ program
   .command('mouse')
   .description('Get "Magic Mouse 2" battery level')
   .action(() => battery
-    .mouse(helpers.extractName(pkg.name))
+    .mouse()
     .catch(helpers.handleError));
 
 program
   .command('keyboard')
   .description('Get "Magic Keyboard with Numeric Keypad" battery level')
   .action(() => battery
-    .keyboard(helpers.extractName(pkg.name))
+    .keyboard()
     .catch(helpers.handleError));
 
 program
