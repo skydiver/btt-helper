@@ -8,9 +8,10 @@ program
 
 program
   .command('level')
+  .option('-p', 'Append percent symbol')
   .description('Get current volume level')
-  .action(() => volume
-    .volume()
+  .action((options) => volume
+    .volume(options)
     .catch(helpers.handleError));
 
 program

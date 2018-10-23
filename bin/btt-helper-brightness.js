@@ -8,9 +8,10 @@ program
 
 program
   .command('level')
+  .option('-p', 'Append percent symbol')
   .description('Get current brightness level')
-  .action(() => brightness
-    .level()
+  .action((options) => brightness
+    .level(options)
     .catch(helpers.handleError));
 
 program

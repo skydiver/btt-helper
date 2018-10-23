@@ -1,11 +1,12 @@
 const cmd = require('node-cmd');
+const helpers = require('../lib/helpers');
 
-const volume = async () => {
-  cmd.get('osascript -e "get volume settings"', (err, data, stderr) => {
+const volume = async (options) => {
+  cmd.get('osascript -e "get volume settings"', (err, data) => {
     const regex = /([0-9]{1,4})/gm;
     const output = data.trim();
-    const res = output.match(regex);
-    console.log(res[0]);
+    const result = output.match(regex);
+    console.log(helpers.appendPercentSymbol(result[0], options.P));
   });
 };
 

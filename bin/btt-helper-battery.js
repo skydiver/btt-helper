@@ -8,16 +8,18 @@ program
 
 program
   .command('mouse')
+  .option('-p', 'Append percent symbol')
   .description('Get "Magic Mouse 2" battery level')
-  .action(() => battery
-    .mouse()
+  .action((options) => battery
+    .mouse(options)
     .catch(helpers.handleError));
 
 program
   .command('keyboard')
+  .option('-p', 'Append percent symbol')
   .description('Get "Magic Keyboard with Numeric Keypad" battery level')
-  .action(() => battery
-    .keyboard()
+  .action((options) => battery
+    .keyboard(options)
     .catch(helpers.handleError));
 
 program
