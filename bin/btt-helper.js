@@ -8,5 +8,6 @@ updateNotifier({ pkg }).notify({ isGlobal: true });
 
 program
   .version(pkg.version)
-  .command('battery', 'Get battery leveles')
+  .command('battery', 'Get battery levels')
+  .command('volume', 'Get volune level')
   .parse(process.argv);
