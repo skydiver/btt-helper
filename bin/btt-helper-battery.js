@@ -7,8 +7,15 @@ program
   .version(pkg.version);
 
 program
+  .command('mouse')
+  .description('Get "Magic Mouse 2" battery level')
+  .action(() => battery
+    .mouse(helpers.extractName(pkg.name))
+    .catch(helpers.handleError));
+
+program
   .command('keyboard')
-  .description('Get Apple Magic Keyboard battery level')
+  .description('Get "Magic Keyboard with Numeric Keypad" battery level')
   .action(() => battery
     .keyboard(helpers.extractName(pkg.name))
     .catch(helpers.handleError));
