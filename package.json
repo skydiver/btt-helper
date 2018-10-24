@@ -1,9 +1,9 @@
 {
   "name": "btt-helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Helpers to improve your BetterTouchTool presets",
   "bin": {
-    "your_command": "./bin/btt-helper.js"
+    "btt-helper": "./bin/btt-helper.js"
   },
   "publishConfig": {
     "access": "public"
