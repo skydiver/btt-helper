@@ -9,16 +9,18 @@ program
 program
   .command('search <query>')
   .description('Search if process is running')
-  .action((query) => proc
+  .action(query => proc
     .search(query)
-    .catch(helpers.handleError));
+    .catch(helpers.handleError)
+  );
 
 program
   .command('multi <query>')
   .description('Search if multiple process (separated by commas) are running')
-  .action((query) => proc
+  .action(query => proc
     .multi(query)
-    .catch(helpers.handleError));
+    .catch(helpers.handleError)
+  );
 
 program
   .parse(process.argv);

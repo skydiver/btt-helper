@@ -10,9 +10,10 @@ program
   .command('level')
   .option('-p', 'Append percent symbol')
   .description('Get current volume level')
-  .action((options) => volume
+  .action(options => volume
     .volume(options)
-    .catch(helpers.handleError));
+    .catch(helpers.handleError)
+  );
 
 program
   .parse(process.argv);

@@ -10,9 +10,10 @@ program
   .command('level')
   .option('-p', 'Append percent symbol')
   .description('Get current brightness level')
-  .action((options) => brightness
+  .action(options => brightness
     .level(options)
-    .catch(helpers.handleError));
+    .catch(helpers.handleError)
+  );
 
 program
   .parse(process.argv);

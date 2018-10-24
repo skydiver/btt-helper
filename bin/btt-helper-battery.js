@@ -10,17 +10,19 @@ program
   .command('mouse')
   .option('-p', 'Append percent symbol')
   .description('Get "Magic Mouse 2" battery level')
-  .action((options) => battery
+  .action(options => battery
     .mouse(options)
-    .catch(helpers.handleError));
+    .catch(helpers.handleError)
+  );
 
 program
   .command('keyboard')
   .option('-p', 'Append percent symbol')
   .description('Get "Magic Keyboard with Numeric Keypad" battery level')
-  .action((options) => battery
+  .action(options => battery
     .keyboard(options)
-    .catch(helpers.handleError));
+    .catch(helpers.handleError)
+  );
 
 program
   .parse(process.argv);

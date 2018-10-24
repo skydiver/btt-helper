@@ -7,7 +7,7 @@ const search = async (query) => {
 
 const multi = async (query) => {
   const procs = query.split(',');
-  const unique = [...(new Set(procs))];
+  const unique = [...new Set(procs)];
   let running = 0;
   for (const proc of unique) {
     const count = await process.search(proc);
