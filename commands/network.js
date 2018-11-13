@@ -36,5 +36,10 @@ const status = async (action) => {
   });
 };
 
+const toggle = async () => {
+  const network = await WiFi.getWiFi();
+  const action = !network ? 'on' : 'off';
+  status(action);
+};
 
-module.exports = { wifi, status };
+module.exports = { wifi, status, toggle };

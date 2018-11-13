@@ -16,6 +16,14 @@ program
   );
 
 program
+  .command('toggle')
+  .description('Toggle WiFi status')
+  .action(() => network
+    .toggle()
+    .catch(helpers.handleError)
+  );
+
+program
   .command('on')
   .description('Turn WiFi on')
   .action(() => network
