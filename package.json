@@ -26,6 +26,7 @@
     "find-process": "^1.1.4",
     "inquirer": "^6.2.0",
     "node-cmd": "^3.0.0",
+    "node-wifi": "^2.0.4",
     "request": "^2.83.0",
     "request-promise": "^4.2.2",
     "update-notifier": "^2.5.0"

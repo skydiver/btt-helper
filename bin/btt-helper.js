@@ -12,4 +12,5 @@ program
   .command('volume', 'Get volune level')
   .command('brightness', 'Get brightness level')
   .command('process', 'Check if process is running')
+  .command('network', 'Network helpers')
   .parse(process.argv);
