@@ -25,6 +25,15 @@ program
   );
 
 program
+  .command('trackpad')
+  .option('-p', 'Append percent symbol')
+  .description('Get "Magic Trackpad 2" battery level')
+  .action(options => battery
+    .trackpad(options)
+    .catch(helpers.handleError)
+  );
+
+program
   .parse(process.argv);
 
 if (!process.argv.slice(2).length) {
