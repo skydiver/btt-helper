@@ -10,6 +10,9 @@ btt-helper battery mouse
 
 # Returns your "Magic Keyboard with Numeric Keypad" battery level
 btt-helper battery keyboard
+
+# Returns your "Magic Trackpad 2" battery level
+btt-helper battery trackpad
 ```
 
 ### Volume
@@ -41,4 +44,5 @@ btt-helper network off
 ## Changelog
 1.0.0: project start, commands for battery, volume and brightness\
 1.0.1: code cleanup\
-1.0.2: added network commands
+1.0.2: added network commands\
+1.0.3: added Magic Trackpad 2 battery info
