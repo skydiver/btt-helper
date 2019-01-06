@@ -1,6 +1,6 @@
 {
   "name": "btt-helper",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Helpers to improve your BetterTouchTool presets",
   "bin": {
     "btt-helper": "./bin/btt-helper.js"
@@ -24,7 +24,6 @@
     "configstore": "^4.0.0",
     "figlet": "^1.2.1",
     "find-process": "^1.2.1",
-    "homebrew-services": "^0.1.0",
     "inquirer": "^6.2.1",
     "node-cmd": "^3.0.0",
     "node-wifi": "^2.0.5",

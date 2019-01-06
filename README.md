@@ -47,3 +47,4 @@ btt-helper network off
 1.0.2: added network commands\
 1.0.3: added Magic Trackpad 2 battery info\
 1.0.4: added running Brew services count\
+1.0.5: refactored brew services command

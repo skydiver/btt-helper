@@ -1,14 +1,11 @@
-const brew = require('homebrew-services');
+const cmd = require('node-cmd');
 
 const services = async () => {
-  let total = 0;
-  const srv = await brew.list();
-  srv.services.forEach((status, service) => {
-    if (status === 'started') {
-      total++;
-    }
+  const brew = '/usr/local/bin/brew services list';
+  cmd.get(brew, (err, data) => {
+    const total = (data.match(/started/g) || []).length;
+    console.log(total);
   });
-  console.log(total);
 };
 
 module.exports = { services };
