@@ -45,4 +45,5 @@ btt-helper network off
 1.0.0: project start, commands for battery, volume and brightness\
 1.0.1: code cleanup\
 1.0.2: added network commands\
-1.0.3: added Magic Trackpad 2 battery info
+1.0.3: added Magic Trackpad 2 battery info\
+1.0.4: added running Brew services count\

@@ -554,6 +554,11 @@ he@1.1.1:
   resolved "https://registry.yarnpkg.com/he/-/he-1.1.1.tgz#93410fd21b009735151f8868c2f271f3427e23fd"
   integrity sha1-k0EP0hsAlzUVH4howvJx80J+I/0=
 
+homebrew-services@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/homebrew-services/-/homebrew-services-0.1.0.tgz#b8b0f1d4c0143ee53c82212c4b3d7086d05897eb"
+  integrity sha512-D5ek7Z55ca74pIx7T1A8xKqP+5JYMite5nMDg7m7rvmXNq7EfYzFTfmB8zE4N6bPZ98RtPoFSE/6lUDOTZAhwQ==
+
 http-signature@~1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/http-signature/-/http-signature-1.2.0.tgz#9aecd925114772f3d95b65a60abb8f7c18fbace1"

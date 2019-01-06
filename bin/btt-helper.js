@@ -11,6 +11,7 @@ program
   .command('battery', 'Get battery levels')
   .command('volume', 'Get volune level')
   .command('brightness', 'Get brightness level')
-  .command('process', 'Check if process is running')
+  // .command('process', 'Check if process is running')
   .command('network', 'Network helpers')
+  .command('brew', 'Brew helpers')
   .parse(process.argv);
