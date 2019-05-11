@@ -2,6 +2,9 @@
 
 ## Changelog
 
+### 1.0.6 (_2019-05-11_)
+Added Time Machine status command
+
 ### 1.0.5 (_2019-01-06_)
 Refactored brew services command
 

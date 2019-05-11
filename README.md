@@ -46,3 +46,9 @@ btt-helper network toggle
 btt-helper network on
 btt-helper network off
 ```
+
+### Time Machine
+```
+# Returns Time Machine running status (1 running, 0 not running)
+btt-helper tm status
+```

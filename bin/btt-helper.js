@@ -14,4 +14,5 @@ program
   // .command('process', 'Check if process is running')
   .command('network', 'Network helpers')
   .command('brew', 'Brew helpers')
+  .command('tm', 'Time Machine')
   .parse(process.argv);

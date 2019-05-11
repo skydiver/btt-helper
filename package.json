@@ -1,6 +1,6 @@
 {
   "name": "btt-helper",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Helpers to improve your BetterTouchTool presets",
   "bin": {
     "btt-helper": "./bin/btt-helper.js"
