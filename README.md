@@ -1,6 +1,13 @@
 # BetterTouchTool Helpers
 > Helpers to improve your BetterTouchTool presets
 
+## Installation
+
+```
+npm install -g btt-helper
+```
+
+
 ## Available commands
 
 ### Battery
@@ -39,12 +46,3 @@ btt-helper network toggle
 btt-helper network on
 btt-helper network off
 ```
-
-
-## Changelog
-1.0.0: project start, commands for battery, volume and brightness\
-1.0.1: code cleanup\
-1.0.2: added network commands\
-1.0.3: added Magic Trackpad 2 battery info\
-1.0.4: added running Brew services count\
-1.0.5: refactored brew services command
