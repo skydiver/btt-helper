@@ -4,11 +4,10 @@ const { appendPercentSymbol } = require('../lib/helpers');
 const getBattery = async (device, options) => {
   const exec = `ioreg -l | grep -A 10 "${device}" | grep '"BatteryPercent" ='`;
   const data = await cmd(exec);
-  const output = data.trim();
-  if (output === '') {
-    console.log('-');
-    process.exit(1);
+  if (data === undefined) {
+    return '-';
   }
+  const output = data.trim();
   const regex = /([0-9]{1,4})/gm;
   const result = output.match(regex);
   return appendPercentSymbol(result[0], options.P);
