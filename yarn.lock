@@ -1785,10 +1785,10 @@ node-environment-flags@1.0.5:
     object.getownpropertydescriptors "^2.0.3"
     semver "^5.7.0"
 
-node-wifi@^2.0.5:
+node-wifi-fixed@^2.0.5:
   version "2.0.5"
-  resolved "https://registry.yarnpkg.com/node-wifi/-/node-wifi-2.0.5.tgz#74c5b2f2cebb29c503054c67634191065550b54f"
-  integrity sha512-3kbbaxwQvyGZPb0pahvhse5JJ5ReHh49tsnI0fitCQJGmdCpeIW2M+DKtJZd/JcMXsw9lUZxg97DoVRHdrwW5Q==
+  resolved "https://registry.yarnpkg.com/node-wifi-fixed/-/node-wifi-fixed-2.0.5.tgz#4e039c7f829aaebbbb8595d92c054f9e0c6e6b70"
+  integrity sha512-12t7zBo67om81IdqS5rTMzQLf569A78uoYsZipaMQihA2Lyt4E8k8m6EFjp5Lq/OEU3+MxXFDSFsLII3gIuTbQ==
   dependencies:
     command-line-args "^3.0.1"
     command-line-usage "^5.0.5"
