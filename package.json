@@ -2,6 +2,9 @@
   "name": "btt-helper",
   "version": "1.1.1",
   "description": "Helpers to improve your BetterTouchTool presets",
+  "author": "Martín M.",
+  "license": "MIT",
+  "homepage": "https://github.com/skydiver/",
   "bin": {
     "btt-helper": "./bin/btt-helper.js"
   },
@@ -9,13 +12,24 @@
     "access": "public"
   },
   "scripts": {
-    "test": "mocha --recursive --watch",
+    "test": "mocha --recursive",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
-  "author": "Martín M.",
-  "license": "MIT",
-  "homepage": "https://github.com/skydiver/",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "cli-table": "^0.3.1",
+    "commander": "^2.20.0",
+    "configstore": "^4.0.0",
+    "figlet": "^1.2.1",
+    "find-process": "^1.4.1",
+    "inquirer": "^6.3.1",
+    "node-cmd": "^3.0.0",
+    "node-wifi-fixed": "^2.0.5",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "update-notifier": "^3.0.0"
+  },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "chai": "^4.2.0",
@@ -31,19 +45,5 @@
     "eslint-plugin-react-hooks": "^1.6.0",
     "mocha": "^6.1.4",
     "prettier": "^1.17.0"
-  },
-  "dependencies": {
-    "chalk": "^2.4.2",
-    "cli-table": "^0.3.1",
-    "commander": "^2.20.0",
-    "configstore": "^4.0.0",
-    "figlet": "^1.2.1",
-    "find-process": "^1.4.1",
-    "inquirer": "^6.3.1",
-    "node-cmd": "^3.0.0",
-    "node-wifi-fixed": "^2.0.5",
-    "request": "^2.88.0",
-    "request-promise": "^4.2.4",
-    "update-notifier": "^3.0.0"
   }
 }
