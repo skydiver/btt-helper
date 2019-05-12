@@ -2,6 +2,12 @@
 
 ## Changelog
 
+### 1.1.1 (_2019-05-11_)
+Fixed network command
+
+### 1.1.0 (_2019-05-11_)
+Package refactored
+
 ### 1.0.6 (_2019-05-11_)
 Added Time Machine status command
 
