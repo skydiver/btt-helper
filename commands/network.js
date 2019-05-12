@@ -1,38 +1,33 @@
 const WiFi = require('../lib/wifi');
 
-
-const wifi = async (options) => {
+const wifi = async options => {
   const network = await WiFi.getWiFi();
   if (!network) {
-    const msg = options.T || 'No connected';
-    console.log(msg);
-    process.exit(1);
+    return options.T || 'No connected';
   }
-  console.log(network);
+  return network;
 };
 
-const status = async (action) => {
+const status = async action => {
   const network = await WiFi.getWiFi();
 
   if (network === false && action === 'off') {
-    console.log('WiFi is already off!');
-    process.exit(1);
+    return 'WiFi is already off!';
   }
 
   if (network !== false && action === 'on') {
-    console.log('WiFi is already on!');
-    process.exit(1);
+    return 'WiFi is already on!';
   }
 
   await WiFi.switchWiFi(action);
-  console.log(`WiFi turned ${action}`);
+  return `WiFi turned ${action}`;
 };
 
 const toggle = async () => {
   const network = await WiFi.getWiFi();
   const action = !network ? 'on' : 'off';
-  status(action);
+  const result = status(action);
+  return result;
 };
-
 
 module.exports = { wifi, status, toggle };
