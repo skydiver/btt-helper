@@ -1,11 +1,10 @@
-const cmd = require('node-cmd');
+const cmd = require('../lib/async-cmd');
 
 const services = async () => {
-  const brew = '/usr/local/bin/brew services list';
-  cmd.get(brew, (err, data) => {
-    const total = (data.match(/started/g) || []).length;
-    console.log(total);
-  });
+  const exec = '/usr/local/bin/brew services list';
+  const data = await cmd(exec);
+  const total = (data.match(/started/g) || []).length;
+  return total;
 };
 
 module.exports = { services };

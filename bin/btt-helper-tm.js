@@ -1,14 +1,19 @@
 const program = require('commander');
 const pkg = require('../package.json');
 const tm = require('../commands/tm');
-const helpers = require('../lib/helpers');
+const { handleError } = require('../lib/helpers');
 
 program.version(pkg.version);
 
 program
   .command('status')
   .description('Get Time Machine running status')
-  .action(() => tm.status().catch(helpers.handleError));
+  .action(() =>
+    tm
+      .status()
+      .then(console.log)
+      .catch(handleError)
+  );
 
 program.parse(process.argv);
 
