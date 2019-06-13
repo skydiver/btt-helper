@@ -5,7 +5,8 @@ const status = async () => {
   const result = await cmd(exec);
   const regex = /^\s+Running[\s+|\D\s+]*(\d)/m;
   const match = regex.exec(result);
-  return match ? match[1] : 0;
+  const value = match ? match[1] : 0;
+  return parseInt(value, 10);
 };
 
 module.exports = { status };
