@@ -1,4 +1,5 @@
 const program = require('commander');
+
 const pkg = require('../package.json');
 const tm = require('../commands/tm');
 const { handleError } = require('../lib/helpers');

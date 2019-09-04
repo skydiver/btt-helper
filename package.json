@@ -12,7 +12,7 @@
     "access": "public"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest --runInBand --verbose",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },

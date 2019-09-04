@@ -14,7 +14,7 @@ const status = async () => {
 };
 
 const latestbackup = async (options = {}) => {
-  const dateFormat = _get(options, 'F', 'yyyy-MM-dd, HH:mm:ss');
+  const dateFormat = _get(options, 'F', 'yyyy-MM-dd HH:mm:ss');
   const path = '/Library/Preferences/com.apple.TimeMachine.plist';
   const obj = await bplist.parseFile(path);
   const arr = obj[0].Destinations[0].SnapshotDates;
