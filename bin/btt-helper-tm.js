@@ -15,6 +15,16 @@ program
       .catch(handleError)
   );
 
+program
+  .command('latestbackup')
+  .description('Get Time Machine latest backup date')
+  .action(() =>
+    tm
+      .latestbackup()
+      .then(console.log)
+      .catch(handleError)
+  );
+
 program.parse(process.argv);
 
 if (!process.argv.slice(2).length) {

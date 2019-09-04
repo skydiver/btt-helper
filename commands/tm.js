@@ -1,3 +1,4 @@
+const bplist = require('bplist-parser');
 const cmd = require('../lib/async-cmd');
 
 const status = async () => {
@@ -9,4 +10,11 @@ const status = async () => {
   return parseInt(value, 10);
 };
 
-module.exports = { status };
+const latestbackup = async () => {
+  const path = '/Library/Preferences/com.apple.TimeMachine.plist';
+  const obj = await bplist.parseFile(path);
+  const arr = obj[0].Destinations[0].SnapshotDates;
+  return arr[arr.length - 1];
+};
+
+module.exports = { status, latestbackup };
