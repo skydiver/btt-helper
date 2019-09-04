@@ -14,29 +14,29 @@ describe('Battery', function() {
     });
   });
 
-  // describe('Keyboard', function() {
-  //   it('should return a number', async function() {
-  //     const result = await battery.keyboard({ P: false });
-  //     expect(result).to.be.an('number');
-  //   });
+  describe('Keyboard', function() {
+    it('should return a number', async function() {
+      const result = await battery.keyboard({ P: false });
+      expect(typeof result).toBe('number');
+    });
 
-  //   it('should return string', async function() {
-  //     const result = await battery.keyboard({ P: true });
-  //     expect(result).to.be.an('string');
-  //     expect(result).to.be.include('%');
-  //   });
-  // });
+    it('should return string', async function() {
+      const result = await battery.keyboard({ P: true });
+      expect(typeof result).toBe('string');
+      expect(result).toMatch('%');
+    });
+  });
 
-  // describe('Trackpad', function() {
-  //   it('should return a number', async function() {
-  //     const result = await battery.trackpad({ P: false });
-  //     expect(result).to.be.an('number');
-  //   });
+  describe('Trackpad', function() {
+    it('should return a number', async function() {
+      const result = await battery.trackpad({ P: false });
+      expect(typeof result).toBe('number');
+    });
 
-  //   it('should return string', async function() {
-  //     const result = await battery.trackpad({ P: true });
-  //     expect(result).to.be.an('string');
-  //     expect(result).to.be.include('%');
-  //   });
-  // });
+    it('should return string', async function() {
+      const result = await battery.trackpad({ P: true });
+      expect(typeof result).toBe('string');
+      expect(result).toMatch('%');
+    });
+  });
 });
