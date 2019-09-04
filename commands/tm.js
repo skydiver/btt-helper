@@ -1,6 +1,7 @@
 const format = require('date-fns/format');
-
 const bplist = require('bplist-parser');
+
+const { _get } = require('../lib/helpers');
 const cmd = require('../lib/async-cmd');
 
 const status = async () => {
@@ -12,8 +13,8 @@ const status = async () => {
   return parseInt(value, 10);
 };
 
-const latestbackup = async options => {
-  const dateFormat = options.F || 'yyyy-MM-dd, HH:mm:ss';
+const latestbackup = async (options = {}) => {
+  const dateFormat = _get(options, 'F', 'yyyy-MM-dd, HH:mm:ss');
   const path = '/Library/Preferences/com.apple.TimeMachine.plist';
   const obj = await bplist.parseFile(path);
   const arr = obj[0].Destinations[0].SnapshotDates;
