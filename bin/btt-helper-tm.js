@@ -18,9 +18,10 @@ program
 program
   .command('latestbackup')
   .description('Get Time Machine latest backup date')
-  .action(() =>
+  .option('-f <format>', 'Format date using date-fns library')
+  .action(options =>
     tm
-      .latestbackup()
+      .latestbackup(options)
       .then(console.log)
       .catch(handleError)
   );

@@ -12,12 +12,13 @@ const status = async () => {
   return parseInt(value, 10);
 };
 
-const latestbackup = async () => {
+const latestbackup = async options => {
+  const dateFormat = options.F || 'yyyy-MM-dd, HH:mm:ss';
   const path = '/Library/Preferences/com.apple.TimeMachine.plist';
   const obj = await bplist.parseFile(path);
   const arr = obj[0].Destinations[0].SnapshotDates;
   const last = arr[arr.length - 1];
-  return format(new Date(last), 'yyyy-MM-dd, HH:mm:ss');
+  return format(new Date(last), dateFormat);
 };
 
 module.exports = { status, latestbackup };
