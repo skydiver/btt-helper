@@ -17,7 +17,6 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "bplist-parser": "^0.2.0",
     "chalk": "^2.4.2",
     "cli-table": "^0.3.1",
     "commander": "^3.0.1",
