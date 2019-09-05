@@ -1,6 +1,6 @@
 {
   "name": "btt-helper",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Helpers to improve your BetterTouchTool presets",
   "author": "Martín M.",
   "license": "MIT",
@@ -17,7 +17,6 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "bplist-parser": "^0.2.0",
     "chalk": "^2.4.2",
     "cli-table": "^0.3.1",
     "commander": "^3.0.1",
