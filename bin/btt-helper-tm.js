@@ -1,4 +1,5 @@
 const program = require('commander');
+
 const pkg = require('../package.json');
 const tm = require('../commands/tm');
 const { handleError } = require('../lib/helpers');
@@ -11,6 +12,17 @@ program
   .action(() =>
     tm
       .status()
+      .then(console.log)
+      .catch(handleError)
+  );
+
+program
+  .command('latestbackup')
+  .description('Get Time Machine latest backup date')
+  .option('-f <format>', 'Format date using date-fns library')
+  .action(options =>
+    tm
+      .latestbackup(options)
       .then(console.log)
       .catch(handleError)
   );
